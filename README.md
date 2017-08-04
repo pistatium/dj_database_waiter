@@ -10,7 +10,7 @@ This is useful when you want to wait for DB connection, such as when using Docke
 
 ## Install
 ```
-pip install -e .
+pip3 install dj_database_waiter
 ```
 
 ## Usage
