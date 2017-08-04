@@ -1,5 +1,7 @@
 # dj_database_waiter
-Script to keep waiting until Django's DB is ready
+Script to keep waiting until Django's DB is ready.
+
+This is useful when you want to wait for DB connection, such as when using DockerCompose.
 
 ## Required
 
@@ -7,8 +9,9 @@ Script to keep waiting until Django's DB is ready
 * Django
 
 ## Install
-WIP:
-
+```
+pip install -e .
+```
 
 ## Usage
 
@@ -16,9 +19,9 @@ WIP:
 $ dj_database_waiter myproject.settings
 
 Failed to connect database. :(2003, "Can't connect to MySQL server on 'db' ([Errno -2] Name or service not known)")
-Retrying... (1/3)
+Retrying... (1/60)
 Failed to connect database. :(2003, "Can't connect to MySQL server on 'db' ([Errno -2] Name or service not known)")
-Retrying... (2/3)
-Failed to connect database. :(2003, "Can't connect to MySQL server on 'db' ([Errno -2] Name or service not known)")
-Retrying... (3/3)
+Retrying... (2/60)
+
+# Database is ready
 ```
