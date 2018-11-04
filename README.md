@@ -25,3 +25,7 @@ Retrying... (2/60)
 
 # Database is ready
 ```
+
+
+__DB の準備が出来るまで Django の起動を待つコマンド作ってみた__
+https://qiita.com/kimihiro_n/items/d42e066a2e495f0c4866
